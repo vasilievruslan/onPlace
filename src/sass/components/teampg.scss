@@ -1,0 +1,69 @@
+.teampage
+{
+    color: $colorW;
+    background-color: #030303;
+    .title
+    {
+        font-size: 73px;
+        font-weight: 300;
+
+        margin: 90px auto;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+.wrapper
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    .profile:nth-child(odd)
+    {
+        flex-direction: row-reverse;
+    }
+}
+.profile
+{
+    display: flex;
+
+    align-items: center;
+    // .profile__view{
+    // 	flex-direction: column;
+    // }
+    .profile__wrap
+    {
+        padding: 10px;
+    }
+    .profile__name
+    {
+        font-size: 26px;
+        font-weight: 300;
+
+        margin-bottom: 5px;
+    }
+    .profile__position
+    {
+        opacity: .5;
+    }
+    .profile__description
+    {
+        font-size: 18px;
+    }
+    img
+    {
+        max-width: 700px;
+    }
+    .links__item
+    {
+        text-decoration: none;
+
+        color: $colorW;
+    }
+
+    .--tw{
+    	color: $colorMain;
+    }
+    .--ln{
+		color: $colorSecond;
+    }
+}

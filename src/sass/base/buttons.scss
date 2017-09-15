@@ -1,0 +1,43 @@
+a.btn{
+  color: #fff;
+  text-decoration: none;
+}
+.btn{
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #1f9df2;
+  min-width: 230px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  line-height: 4;
+  font-weight: bold;
+  transition: ease 0.3s;
+
+  &:hover,
+  &--hover{
+    background-color: #fff;
+    color: #000;
+  }
+
+  &:active,
+  &--active{
+
+  }
+
+  &--modify{
+
+    &:hover,
+    &--hover{
+
+    }
+
+    &:active,
+    &--active{
+
+    }
+  }
+}
