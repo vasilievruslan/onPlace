@@ -4,6 +4,7 @@ $(function() {
 	var sidebar = $('.sidebar');
 	var navbar = $('.navbar__links');
 	var burger = $('#burger');
+	var linkItem = $('.links__item');
 
 	switcher.click(function() {
 		airpalne.addClass("--active")
@@ -14,5 +15,5 @@ $(function() {
 		sidebar.toggleClass('--on');
 		burger.toggleClass('close').toggleClass('opened');
 	});
-
+	
 });
