@@ -6,6 +6,8 @@ $(function() {
 	var burger = $('#burger');
 	var linkItem = $('.links__item');
 
+	var whitePaper = $('#show-pop-up');
+
 	switcher.click(function() {
 		airpalne.addClass("--active")
 	});
@@ -16,4 +18,26 @@ $(function() {
 		burger.toggleClass('close').toggleClass('opened');
 	});
 	
+
+	// pop-up
+
+
+
+	whitePaper.click(function(e) {
+		e.preventDefault();
+
+		$('.pop-up').fadeIn(1000);
+
+		$('#overlay').addClass('blur-in');
+
+	});
+
+	$('.close-button').click(function (e) { 
+
+		$('.pop-up').fadeOut(700);
+		$('#overlay').removeClass('blur-in');
+		
+		e.stopPropagation();
+
+	});
 });
