@@ -1,0 +1,35 @@
+.langswitch{
+	position: absolute;
+	width: 50px;
+	top: calc(50vh - 72px);
+}
+
+.langswitch-item{
+	position: relative;
+	width: 80px;
+	padding: 12px 0px;
+	.lang{
+		color: #fff;
+		transition: ease-in-out 0.3s;
+
+		&:hover{
+			.flag{
+				opacity: 1;
+			}
+			span{
+				opacity: 0;
+			}
+		}
+
+	}
+}
+
+.flag{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	opacity: 0;
+	transition: ease-in-out 0.3s;
+}

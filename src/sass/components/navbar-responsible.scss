@@ -36,9 +36,11 @@
             visibility: visible;
 
             align-items: flex-start;
+            z-index: 1;
         }
         .sidebar{
             display: block;
+            z-index: 1;
         }
 
         .sidebar.--on{
