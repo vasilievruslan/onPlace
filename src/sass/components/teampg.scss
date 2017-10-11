@@ -17,6 +17,7 @@
     font-size: 21px;
 
     display: flex;
+    margin-left: 4vw;
 
     .profile-img{
     }
@@ -37,6 +38,7 @@
         }
         .links{
             text-align: right;
+            padding: 20px 30px;
             a{
                 color: #fff;
             }
