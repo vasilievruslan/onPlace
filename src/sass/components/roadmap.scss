@@ -1,3 +1,8 @@
+.roadmap-sect{
+  background: url("../img/background-roadmap.jpg") center center repeat-y;
+  background-size: cover;
+}
+
 .roadmap-container{
   position: relative; 
   height: 0; 
@@ -14,7 +19,7 @@
   left: 0; 
   top: -50px;
   transition: ease-in-out 5s;
-  z-index: -2;
+  z-index: 0;
 
     // .top{
     //   transform-origin: 110% 140%;
@@ -29,7 +34,38 @@
   transition: ease-in-out 1.2s;
 }
 
+// #hex1{
+//   transform: translate(1804px, 367px);
+// }
+// #hex3{
+//   transform: translate(1514px, 1440px) rotate(-30deg);
+// }
+// #hex5{
+//   transform: translate(1514px, 1955px) rotate(-30deg);
+// }
+// #hex7{
+//   transform: translate(1514px, 2460px) rotate(-30deg);
+// }
+// #hex9{
+//   transform: translate(1514px, 2808px);
+// }
 
+
+// #hex2{
+//   transform: translate(1948px, 1175px) rotate(-30deg);
+// }
+// #hex4{
+//   transform: translate(1948px, 1695px) rotate(-30deg);
+// }
+// #hex6{
+//   transform: translate(1948px, 2195px) rotate(-30deg);
+// }
+// #hex8{
+//   transform: translate(1948px, 2720px) rotate(-30deg);
+// }
+// #hex10{
+//   transform: translate(1804px, 3565px);
+// }
 
 
 .step1

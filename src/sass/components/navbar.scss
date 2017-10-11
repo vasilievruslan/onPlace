@@ -54,13 +54,15 @@
 
 
 .navbar
-{
+{   
+    z-index: 2;
     display: flex;
     width: 94vw;
 
     margin: 0 auto;
 
     justify-content: space-between;
+    position: relative;
     .logo__top
     {
         padding: 20px 2px 2px 2px;
