@@ -1643,7 +1643,9 @@ $(function() {
 
 	// teampage slider
 	$('.bxslider').bxSlider({
-		controls: false
+		controls: false,
+    auto: true,
+    pause: 4000
 	});
 		
 	// Roadmap
@@ -1668,6 +1670,11 @@ $(function() {
 			textPoints.delay(1000).fadeIn('400');
 		},2000)
 	});
+
+ // Language switch
+
+ var langItem = $('a.lang')
+
 
 
 });
