@@ -145,3 +145,25 @@ body{
 	text-decoration: none;
 
 }
+
+.promovideo-button{
+  position: absolute;
+  bottom: 20vh;
+  left: calc(50vw - 50px);
+  width: 100px;
+}
+.play-button{
+  cursor: pointer;
+  fill:#2C2F33;
+
+  path{
+    transition: ease-in-out 0.2s;
+  }
+  &:hover{
+    path{
+      transition: ease-in-out 0.2s;
+      fill: $colorMain;
+    }
+
+  }
+}
