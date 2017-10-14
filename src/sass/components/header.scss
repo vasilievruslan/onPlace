@@ -167,3 +167,25 @@ body{
 
   }
 }
+
+
+.pop-up-video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: none;
+  video{
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.close-button-video{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  z-index: 3;
+}

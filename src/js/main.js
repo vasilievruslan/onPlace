@@ -1675,6 +1675,24 @@ $(function() {
 
  var langItem = $('a.lang')
 
+ // video pop-up
 
 
+  var popUpVideo = $(".pop-up-video");
+  var popUpVideoBtn = $('.promovideo-button');
+  var videoScreen = $('#video-pop-up');
+
+
+  popUpVideoBtn.click(function() {
+    popUpVideo.fadeIn('700', function() {
+      $(this).append('<video autoplay id="video-pop-up" ><source src="img/video/background-video.mp4" type="video/mp4" /></video>');
+    });
+  });
+
+  $('.close-button-video').click(function(e) {
+    e.preventDefault();
+    videoScreen.pause();
+    popUpVideo.hide(700);
+
+  });
 });
