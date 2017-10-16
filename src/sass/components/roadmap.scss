@@ -34,6 +34,23 @@
   transition: ease-in-out 1.2s;
 }
 
+.left-container{
+  fill: white;
+  fill-opacity: 0.6;
+  y: 1070px;
+  x: 480px;
+  width: 980px;
+  height: 2180px;
+}
+
+.right-container{
+  fill: white;
+  fill-opacity: 0.6;
+  y: 1070px;
+  x: 2500px;
+  width: 980px;
+  height: 2180px;
+}
 // #hex1{
 //   transform: translate(1804px, 367px);
 // }
