@@ -170,12 +170,15 @@ body{
 
 
 .pop-up-video{
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
+  overflow: hidden;
   display: none;
   video{
     position: absolute;
