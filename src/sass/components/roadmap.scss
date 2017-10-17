@@ -1,23 +1,30 @@
 .roadmap-sect{
   background: url("../img/background-roadmap.jpg") center center repeat-y;
   background-size: cover;
+  min-height: 100vh;
 }
 
-.roadmap-container{
-  position: relative; 
-  height: 0; 
-  max-width:1200px;
-  width: 100%; 
-  padding: 0;
-  padding-bottom: 100%;
-  margin: 0 auto;
+.roadmap-container
+{
+    position: relative;
+    
+    top: -50px;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 100%;
+
 }
+
 .roadmap{
   position: absolute; 
   height: 100%; 
   width: 100%; 
   left: 0; 
-  top: -250px;
+  top: 0;
   transition: ease-in-out 1s;
   z-index: 0;
 
@@ -51,39 +58,6 @@
   width: 1350px;
   height: 2180px;
 }
-// #hex1{
-//   transform: translate(1804px, 367px);
-// }
-// #hex3{
-//   transform: translate(1514px, 1440px) rotate(-30deg);
-// }
-// #hex5{
-//   transform: translate(1514px, 1955px) rotate(-30deg);
-// }
-// #hex7{
-//   transform: translate(1514px, 2460px) rotate(-30deg);
-// }
-// #hex9{
-//   transform: translate(1514px, 2808px);
-// }
-
-
-// #hex2{
-//   transform: translate(1948px, 1175px) rotate(-30deg);
-// }
-// #hex4{
-//   transform: translate(1948px, 1695px) rotate(-30deg);
-// }
-// #hex6{
-//   transform: translate(1948px, 2195px) rotate(-30deg);
-// }
-// #hex8{
-//   transform: translate(1948px, 2720px) rotate(-30deg);
-// }
-// #hex10{
-//   transform: translate(1804px, 3565px);
-// }
-
 
 .step1
 {
@@ -170,35 +144,35 @@
 
 
 #hex1{
-  transform: translate(1574px, 1227px) rotate(-30deg);
+  transform: translate(1574px, 627px) rotate(-30deg);
 }
 #hex3{
-  transform: translate(1574px, 1590px) rotate(-30deg);
+  transform: translate(1574px, 990px) rotate(-30deg);
 }
 #hex5{
-  transform: translate(1574px, 1955px) rotate(-30deg);
+  transform: translate(1574px, 1355px) rotate(-30deg);
 }
 #hex7{
-  transform: translate(1574px, 2320px) rotate(-30deg);
+  transform: translate(1574px, 1720px) rotate(-30deg);
 }
 #hex9{
-  transform: translate(1574px, 2518px);
+  transform: translate(1574px, 1918px);
 }
 
 
 #hex2{
-  transform: translate(1888px, 1405px) rotate(-30deg);
+  transform: translate(1888px, 805px) rotate(-30deg);
 }
 #hex4{
-  transform: translate(1888px, 1775px) rotate(-30deg);
+  transform: translate(1888px, 1175px) rotate(-30deg);
 }
 #hex6{
-  transform: translate(1888px, 2135px) rotate(-30deg);
+  transform: translate(1888px, 1535px) rotate(-30deg);
 }
 #hex8{
-  transform: translate(1888px, 2505px) rotate(-30deg);
+  transform: translate(1888px, 1905px) rotate(-30deg);
 }
 #hex10{
-  transform: translate(1884px, 2870px) rotate(-30deg);
+  transform: translate(1884px, 2270px) rotate(-30deg);
 }
 

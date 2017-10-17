@@ -194,4 +194,9 @@ body{
   right: 30px;
   top: 10px;
   z-index: 3;
+  font-size: 30px;
+  color: #ccc;
+  &:hover{
+    text-decoration: none;
+  }
 }
