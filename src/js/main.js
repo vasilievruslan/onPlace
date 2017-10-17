@@ -1673,7 +1673,39 @@ $(function() {
 
  // Language switch
 
- var langItem = $('a.lang')
+  var langItem = $('a.lang')
+  var eng = $('#lang-us');
+  var cn = $('#lang-cn');
+  var ind = $('#lang-in');
+
+  cn.click(function(e) {
+    e.preventDefault();
+    $('body').addClass('blur');
+
+    setTimeout(function() {
+      window.location.href = 'index-cn.html';
+    }, 2500);
+
+  });
+  eng.click(function(e) {
+    e.preventDefault();
+    $('body').addClass('blur');
+
+    setTimeout(function() {
+      window.location.href = 'index.html';
+    }, 2500);
+
+  });
+  ind.click(function(e) {
+    e.preventDefault();
+    // $('body').addClass('blur');
+
+    // setTimeout(function() {
+    //   window.location.href = 'index-in.html';
+    // }, 2500);
+
+  });
+
 
  // video pop-up
 

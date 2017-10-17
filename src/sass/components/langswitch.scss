@@ -34,3 +34,7 @@
 	opacity: 0;
 	transition: ease-in-out 0.3s;
 }
+body.blur{
+	transition: filter ease-in-out 0.7s;
+	filter: blur(4px);
+}
