@@ -152,6 +152,15 @@ body{
   left: calc(50vw - 50px);
   width: 100px;
 }
+
+@media screen and (max-width: 536px) {
+  .promovideo-button{
+    top: 70vh;
+    left: calc(50vw - 35px);
+    width: 70px;
+  }
+
+}
 .play-button{
   cursor: pointer;
   fill:#2C2F33;
@@ -194,8 +203,9 @@ body{
   right: 30px;
   top: 10px;
   z-index: 3;
-  font-size: 30px;
-  color: #ccc;
+  font-size: 50px;
+  font-weight: 300;
+  color: #000;
   &:hover{
     text-decoration: none;
   }

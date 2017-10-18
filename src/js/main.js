@@ -1684,7 +1684,7 @@ $(function() {
 
     setTimeout(function() {
       window.location.href = 'index-cn.html';
-    }, 2500);
+    }, 1500);
 
   });
   eng.click(function(e) {
@@ -1693,12 +1693,12 @@ $(function() {
 
     setTimeout(function() {
       window.location.href = 'index.html';
-    }, 2500);
+    }, 1500);
 
   });
   ind.click(function(e) {
     e.preventDefault();
-    // $('body').addClass('blur');
+    //      
 
     // setTimeout(function() {
     //   window.location.href = 'index-in.html';

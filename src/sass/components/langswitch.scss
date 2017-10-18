@@ -35,6 +35,21 @@
 	transition: ease-in-out 0.3s;
 }
 body.blur{
-	transition: filter ease-in-out 0.7s;
-	filter: blur(4px);
+	transition: opacity ease-in-out 0.7s;
+	opacity: 0;
+}
+@media screen and (max-width: 780px){
+	ul.langswitch{
+		display: flex;
+		justify-content: space-around;
+		bottom: 0px;
+		top: auto;
+		width: auto;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		.langswitch-item{
+			display: inline-block;
+		}
+	}
 }

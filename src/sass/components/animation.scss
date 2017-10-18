@@ -6,8 +6,10 @@
 		opacity: 1;
 	}
 }
-
-.header{
+html{
+  background: #000;
+}
+body{
 	animation: fadeIn 2.5s ease-out;
 	.banner {
 		animation: fadeIn 4s ease-in;
@@ -15,26 +17,4 @@
 }
 .play-button{
   animation: fadeIn 4.2s ease-out;
-}
-.navbar__links{
-	.--switcher{}
-}
-
-.plane-fly.--active{
-  animation: animationFrames linear 4.5s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards;
-}
-
-@keyframes animationFrames{
-  0% {
-    transform:  translate(0, 0)  scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    transform:  translate(50vw,-25vh)  scaleX(1.24) scaleY(1.34) ;
-  }
-  100% {
-    transform:  translate(110vw, -50vh)  scaleX(0.78) scaleY(0.78) ;
-  }
 }

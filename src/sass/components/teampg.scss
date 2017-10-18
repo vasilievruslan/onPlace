@@ -116,3 +116,47 @@ ul.bxslider {
   font-size: 0;
   line-height: 0;
 }
+
+// responsive
+
+@media screen and (max-width: 740px) {
+  .bx-wrapper{
+    width: 100vw;
+    padding-bottom: 40px;
+    .bx-pager{
+      bottom: 20px;
+    }
+  }
+  .profile
+  {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 2vw 0 2vw;
+
+    .profile-img{
+    }
+    .profile-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 50px;
+        justify-content: space-between;
+
+        .name{
+            margin-bottom: 0;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1;
+        }
+        .position{
+            margin-bottom: 40px;
+        }
+        .links{
+            text-align: right;
+            padding: 20px 30px;
+            a{
+                color: #fff;
+            }
+        }
+    }
+  }
+}
