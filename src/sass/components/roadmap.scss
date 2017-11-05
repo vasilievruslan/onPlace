@@ -1,5 +1,5 @@
 .roadmap-sect{
-  background: url("../img/background-roadmap.jpg") center center repeat-y;
+  background: url("../img/background-roadmap.jpg") top center repeat-y;
   background-size: cover;
   min-height: 100vh;
 }
@@ -8,21 +8,22 @@
 {
     position: relative;
     
-    top: -50px;
+    top: 0  ;
 
     width: 100%;
     max-width: 1200px;
     height: 0;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 100%;
+    padding-bottom: 130vh;
 
 }
 
 .roadmap{
   position: absolute; 
-  height: 100%; 
-  width: 100%; 
+  height: 130vh; 
+  margin: 0 auto;
+  right: 0;
   left: 0; 
   top: 0;
   transition: ease-in-out 1s;
@@ -53,9 +54,9 @@
   height: 2180px;
 }
 
+
 .step1
 {
-  top: 0px;
     #hex1
     {
         transform: translate(1514px, 1227px) rotate(-30deg);
@@ -138,35 +139,36 @@
 
 
 #hex1{
-  transform: translate(1574px, 627px) rotate(-30deg);
+  transform: translate(1574px, 127px) rotate(-30deg);
 }
 #hex3{
-  transform: translate(1574px, 990px) rotate(-30deg);
+  transform: translate(1574px, 490px) rotate(-30deg);
 }
 #hex5{
-  transform: translate(1574px, 1355px) rotate(-30deg);
+  transform: translate(1574px, 855px) rotate(-30deg);
 }
 #hex7{
-  transform: translate(1574px, 1720px) rotate(-30deg);
+  transform: translate(1574px, 1220px) rotate(-30deg);
 }
 #hex9{
-  transform: translate(1574px, 1918px);
+  transform: translate(1574px, 1418px);
 }
 
 
 #hex2{
-  transform: translate(1888px, 805px) rotate(-30deg);
+  transform: translate(1888px, 305px) rotate(-30deg);
 }
 #hex4{
-  transform: translate(1888px, 1175px) rotate(-30deg);
+  transform: translate(1888px, 675px) rotate(-30deg);
 }
 #hex6{
-  transform: translate(1888px, 1535px) rotate(-30deg);
+  transform: translate(1888px, 1035px) rotate(-30deg);
 }
 #hex8{
-  transform: translate(1888px, 1905px) rotate(-30deg);
+  transform: translate(1888px, 1405px) rotate(-30deg);
 }
 #hex10{
-  transform: translate(1884px, 2270px) rotate(-30deg);
+  transform: translate(1884px, 1770px) rotate(-30deg);
 }
+
 

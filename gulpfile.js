@@ -45,7 +45,7 @@ var config = {
     },
     tunnel: true,
     host: 'localhost',
-    port: 8081,
+    port: 3031,
     logPrefix: "Ruzerio"
 };
 

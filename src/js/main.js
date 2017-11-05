@@ -1628,17 +1628,17 @@ $(function() {
 
 	whitePaper.click(function(event) {
 		event.preventDefault();
-		overlay.fadeIn(700);
-		popUp.fadeIn(1000);
+		overlay.fadeIn(400);
+		popUp.fadeIn(400);
 	});
 
 	closeBtn.click(function() {
-		overlay.fadeOut(1000);
-		popUp.fadeOut(1000);
+		overlay.fadeOut(400);
+		popUp.fadeOut(400);
 	});
 	overlay.click(function() {
-		overlay.fadeOut(1000);
-		popUp.fadeOut(1000);
+		overlay.fadeOut(400);
+		popUp.fadeOut(400);
 	});
 
 	// teampage slider
@@ -1715,7 +1715,7 @@ $(function() {
 
 
   popUpVideoBtn.click(function() {
-    popUpVideo.append('<video autoplay id="video-pop-up" ><source src="img/video/background-video.mp4" type="video/mp4" /></video>');
+    popUpVideo.append('<iframe id="video" src="https://player.vimeo.com/video/129337877?rel=0&autoplay=1"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
     popUpVideo.fadeIn(700);
   });
 
@@ -1726,5 +1726,17 @@ $(function() {
     popUpVideo.hide(700);
     videoScreen.remove();
 
+  });
+
+  var popUpManual = $('.pop-manual');
+  var popUpShowBtn = $('#show-manual');
+  var popUpManualOverlay = $('.manual-overlay');
+
+  popUpShowBtn.click(function(event) {
+    event.preventDefault();
+    popUpManual.fadeIn(400);
+  });
+  popUpManualOverlay.click(function() {
+    popUpManual.fadeOut(400);
   });
 });
