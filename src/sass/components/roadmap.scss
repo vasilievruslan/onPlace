@@ -6,26 +6,11 @@
 
 .roadmap-container
 {
-    position: relative;
-    
-    top: 0  ;
-
-    width: 100%;
-    max-width: 1200px;
-    height: 0;
-    margin: 0 auto;
-    padding: 0;
-    padding-bottom: 130vh;
-
+  text-align: center;
 }
 
 .roadmap{
-  position: absolute; 
-  height: 130vh; 
-  margin: 0 auto;
-  right: 0;
-  left: 0; 
-  top: 0;
+  max-width: 900px;
   transition: ease-in-out 1s;
   z-index: 0;
 

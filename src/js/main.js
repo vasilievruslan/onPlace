@@ -1622,24 +1622,40 @@ $(function() {
 	// pop-up
 
 	var whitePaper = $('#show-pop-up');
-	var overlay = $('.cover'),
-		closeBtn = $('.close-button'),
-		popUp = $('.pop-up');
+	var overlay = $('.cover');
+  var closeBtn = $('.close-button');
+	var popUpWhitepapper = $('.whitepapper');
+  var feedback = $('#show-feedback');
+  var popUpFeedback = $('.feedback');
 
-	whitePaper.click(function(event) {
-		event.preventDefault();
-		overlay.fadeIn(400);
-		popUp.fadeIn(400);
-	});
+
+
+  whitePaper.click(function(event) {
+    event.preventDefault();
+    overlay.fadeIn(400);
+    popUpWhitepapper.fadeIn(400);
+  });
+
 
 	closeBtn.click(function() {
 		overlay.fadeOut(400);
-		popUp.fadeOut(400);
+		popUpWhitepapper.fadeOut(400);
+    popUpFeedback.fadeOut(400);
 	});
 	overlay.click(function() {
 		overlay.fadeOut(400);
-		popUp.fadeOut(400);
+		popUpWhitepapper.fadeOut(400);
+    popUpFeedback.fadeOut(400);
 	});
+
+  feedback.click(function(event) {
+    event.preventDefault();
+    overlay.fadeIn(400);
+    popUpFeedback.fadeIn(400);
+  });
+
+
+
 
 	// teampage slider
 	$('.bxslider').bxSlider({
@@ -1678,6 +1694,23 @@ $(function() {
   var cn = $('#lang-cn');
   var ind = $('#lang-in');
 
+  var langBtn = $('.langswitch-btn');
+  var langSwitch = $('.langswitch');
+  var langSwitchCarusel = $('.langswitch-carusel');
+
+  langBtn.click(function() {
+    langSwitch.toggle(400);
+  });
+
+  langSwitchCarusel.bxSlider({
+    auto: true,
+    controls: false,
+    pause: 2000,
+    pager: false,
+  })
+
+
+
   cn.click(function(e) {
     e.preventDefault();
     $('body').addClass('blur');
@@ -1710,27 +1743,30 @@ $(function() {
  // video pop-up
 
 
-  var popUpVideo = $(".pop-up-video");
+  var popUpVideoContainer = $(".pop-up-video");
   var popUpVideoBtn = $('.promovideo-button');
 
 
   popUpVideoBtn.click(function() {
-    popUpVideo.append('<iframe id="video" src="https://player.vimeo.com/video/129337877?rel=0&autoplay=1"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
-    popUpVideo.fadeIn(700);
+    popUpVideoContainer.append('<iframe id="video" src="https://www.youtube.com/embed/fSTkFjfC1Cg?rel=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+    popUpVideoContainer.fadeIn(700);
   });
 
   $('.close-button-video').click(function(e) {
+    var video = $('#video');
     var videoScreen = $('#video-pop-up');
     
     e.preventDefault();
-    popUpVideo.hide(700);
+    popUpVideoContainer.hide(700);
     videoScreen.remove();
+    video.remove();
 
   });
 
   var popUpManual = $('.pop-manual');
   var popUpShowBtn = $('#show-manual');
   var popUpManualOverlay = $('.manual-overlay');
+
 
   popUpShowBtn.click(function(event) {
     event.preventDefault();
@@ -1739,4 +1775,6 @@ $(function() {
   popUpManualOverlay.click(function() {
     popUpManual.fadeOut(400);
   });
+
+
 });

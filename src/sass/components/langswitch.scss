@@ -1,8 +1,29 @@
+.langswitch-btn{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 2px solid #2C2F33;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: ease-in-out 0.3s;
+	&:hover{
+		border-color: $colorMain;
+	}
+	.bx-wrapper{
+		margin: 0;
+		line-height: 3.7;
+	}
+
+}
+
 .langswitch{
 	position: absolute;
 	width: 50px;
-	top: calc(50vh - 72px);
-	left: 10px;
+	top: 90px;
+	display: none;
 }
 
 .langswitch-item{
