@@ -20,12 +20,16 @@
     margin-left: 3.9vw;
 
     .profile-img{
+      img{
+        max-width: 30vw;
+      }
     }
     .profile-content{
         display: flex;
         flex-direction: column;
         padding: 0px 50px;
         justify-content: space-between;
+        position: relative;
 
         .name{
             margin-bottom: 0;
@@ -37,7 +41,9 @@
             margin-bottom: 40px;
         }
         .links{
-            text-align: right;
+            position: absolute;
+            right: 50px;
+            bottom: 10px;
             padding: 20px 30px;
             a{
                 color: #fff;
@@ -136,27 +142,27 @@ ul.bxslider {
     .profile-img{
     }
     .profile-content{
-        display: flex;
-        flex-direction: column;
-        padding: 0px 50px;
-        justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 50px;
+      justify-content: space-between;
 
-        .name{
-            margin-bottom: 0;
-            font-size: 40px;
-            font-weight: 500;
-            line-height: 1;
+      .name{
+          margin-bottom: 0;
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 1;
+      }
+      .position{
+          margin-bottom: 40px;
+      }
+      .links{
+        text-align: right;
+        padding: 20px 30px;
+        a{
+            color: #fff;
         }
-        .position{
-            margin-bottom: 40px;
-        }
-        .links{
-            text-align: right;
-            padding: 20px 30px;
-            a{
-                color: #fff;
-            }
-        }
+      }
     }
   }
 }

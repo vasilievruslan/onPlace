@@ -1,0 +1,55 @@
+
+.manual-container{
+	min-width: 100vw;
+	min-height: 100vh;
+	background: #fff;
+	background-image: url('../img/manual-background.svg'), none;
+	text-align: center;
+	.navbar{
+		svg{
+			#Artboard{
+				fill: #000 !important;
+			}
+		}
+		.links__item{
+			color: #000;
+		}
+		.langswitch-carusel{
+			color: #000;
+		}
+		.langswitch-item{
+			text-align: left;
+			span{
+				color:#000;
+			}
+		}
+	}
+	h2{
+		font-size: 40px;
+		margin-top: 108px;
+		margin-bottom: 0;
+	}
+	p{
+		margin-top: 0;
+		margin-bottom: 152px;
+		font-size: 16px;
+	}
+	.footer{
+		font-size: 16px;
+		margin-top: 83px;
+		margin-bottom: 35px;
+
+	}
+	.wpbtn-footer{
+		border-radius: 10px;
+		background-color: $colorMain;
+		color: #fff;
+		padding: 0 12px;
+		line-height: 4;
+		display: inline-block;
+		margin-bottom: 30px;
+		border: none;
+		outline: none;
+	}
+
+}

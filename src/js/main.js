@@ -1621,7 +1621,8 @@ $(function() {
 
 	// pop-up
 
-	var whitePaper = $('#show-pop-up');
+	var whitePapper = $('#show-pop-up');
+  var whitePapperBtn = $('.wpbtn-footer');
 	var overlay = $('.cover');
   var closeBtn = $('.close-button');
 	var popUpWhitepapper = $('.whitepapper');
@@ -1630,7 +1631,13 @@ $(function() {
 
 
 
-  whitePaper.click(function(event) {
+  whitePapper.click(function(event) {
+    event.preventDefault();
+    overlay.fadeIn(400);
+    popUpWhitepapper.fadeIn(400);
+  });
+
+  whitePapperBtn.click(function(event) {
     event.preventDefault();
     overlay.fadeIn(400);
     popUpWhitepapper.fadeIn(400);
@@ -1748,7 +1755,7 @@ $(function() {
 
 
   popUpVideoBtn.click(function() {
-    popUpVideoContainer.append('<iframe id="video" src="https://www.youtube.com/embed/fSTkFjfC1Cg?rel=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+    popUpVideoContainer.append('<iframe id="video" src="https://www.youtube.com/embed/p1YiDKlSe8k?rel=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
     popUpVideoContainer.fadeIn(700);
   });
 
@@ -1763,18 +1770,18 @@ $(function() {
 
   });
 
-  var popUpManual = $('.pop-manual');
-  var popUpShowBtn = $('#show-manual');
-  var popUpManualOverlay = $('.manual-overlay');
+  // var popUpManual = $('.pop-manual');
+  // var popUpShowBtn = $('#show-manual');
+  // var popUpManualOverlay = $('.manual-overlay');
 
 
-  popUpShowBtn.click(function(event) {
-    event.preventDefault();
-    popUpManual.fadeIn(400);
-  });
-  popUpManualOverlay.click(function() {
-    popUpManual.fadeOut(400);
-  });
+  // popUpShowBtn.click(function(event) {
+  //   event.preventDefault();
+  //   popUpManual.fadeIn(400);
+  // });
+  // popUpManualOverlay.click(function() {
+  //   popUpManual.fadeOut(400);
+  // });
 
 
 });
