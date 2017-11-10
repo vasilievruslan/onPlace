@@ -18,6 +18,8 @@
 
     display: flex;
     margin-left: 3.9vw;
+    max-width: 96vw;
+    position: relative;
 
     .profile-img{
       img{
@@ -29,7 +31,6 @@
         flex-direction: column;
         padding: 0px 50px;
         justify-content: space-between;
-        position: relative;
 
         .name{
             margin-bottom: 0;
