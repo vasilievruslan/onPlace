@@ -1,169 +1,59 @@
-
-.teampage
-{
-   background-image: url("../img/background-team.jpg");
-   background-size: cover;
-   background-origin: content-box;
-   min-height: 100vh;
-}
-.profile
-{
-    background: rgba(157,202,234,0.5);
-    background: linear-gradient(to bottom, rgba(157,202,234,0.5) 0%, rgba(30,157,242,0.5) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dcaea', endColorstr='#1e9df2', GradientType=0 );
-    
-    color: #fff;
-    font-weight: 300;
-    font-size: 21px;
-
-    display: flex;
-    margin-left: 3.9vw;
-    max-width: 96vw;
-    position: relative;
-
-    .profile-img{
-      img{
-        max-width: 30vw;
-      }
-    }
-    .profile-content{
-        display: flex;
-        flex-direction: column;
-        padding: 0px 50px;
-        justify-content: space-between;
-
-        .name{
-            margin-bottom: 0;
-            font-size: 40px;
-            font-weight: 500;
-            line-height: 1;
-        }
-        .position{
-            margin-bottom: 40px;
-        }
-        .links{
-            position: absolute;
-            right: 50px;
-            bottom: 10px;
-            padding: 20px 30px;
-            a{
-                color: #fff;
-            }
-        }
-    }
-}
-
-
-
-.bx-wrapper {
-    margin-top: 60px;
-  position: relative;
-  padding: 0;
-  *zoom: 1;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-}
-.bx-wrapper img {
-  max-width: 100%;
-  display: block;
-}
-.bxslider {
-  margin: 0;
-  padding: 0;
-}
-ul.bxslider {
-  list-style: none;
-}
-.bx-viewport {
-  /*fix other elements on the page moving (on Chrome)*/
-  -webkit-transform: translatez(0);
-}
-/** THEME
-===================================*/
-.bx-wrapper .bx-pager,
-.bx-wrapper .bx-controls-auto {
-  position: absolute;
-  bottom: -30px;
-  width: 100%;
-}
-/* PAGER */
-.bx-wrapper .bx-pager {
+.team{
+  background-color: #333333;
+  color: #FAFAFA;
   text-align: center;
-  font-size: .85em;
-  font-family: Arial;
-  font-weight: bold;
-  color: #666;
-  padding-top: 20px;
-}
-.bx-wrapper .bx-pager.bx-default-pager a {
-  background: #666;
-  text-indent: -9999px;
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  outline: 0;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: $colorMain;
-}
-.bx-wrapper .bx-pager-item,
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-  display: inline-block;
-  vertical-align: bottom;
-  *zoom: 1;
-  *display: inline;
-}
-.bx-wrapper .bx-pager-item {
-  font-size: 0;
-  line-height: 0;
-}
-
-// responsive
-
-@media screen and (max-width: 740px) {
-  .bx-wrapper{
-    width: 100vw;
-    padding-bottom: 40px;
-    .bx-pager{
-      bottom: 20px;
-    }
+  h2{
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+    margin-top: 108px;
+    margin-bottom: 0;
   }
-  .profile
-  {
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 0 2vw 0 2vw;
+  p{
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    margin-bottom: 152px;
+    font-size: 16px;
+  }
+}
 
-    .profile-img{
+.team-wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  .member-picture{
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    &:hover{
+      opacity: 0.5;
     }
-    .profile-content{
-      display: flex;
-      flex-direction: column;
-      padding: 0px 50px;
-      justify-content: space-between;
 
-      .name{
-          margin-bottom: 0;
-          font-size: 40px;
-          font-weight: 500;
-          line-height: 1;
-      }
-      .position{
-          margin-bottom: 40px;
-      }
-      .links{
-        text-align: right;
-        padding: 20px 30px;
-        a{
-            color: #fff;
-        }
-      }
+  }
+  svg{
+    position: relative;
+    top: -460px;
+    z-index: 0;
+    height: 100%;
+  }
+  .description-item{
+    position: absolute;
+    top: 400px;
+    width: 420px;
+    border: 1px solid #FAFAFA;
+    background-color: rgba(51,51,51,0.5);
+    padding: 20px;
+    text-align: left;
+    
+    .member-name{
+      font-size: 20px;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+    .meber-objective{
+      margin: 0;
+      font-size: 13px;
+      line-height: 18px;
+      font-family: "Open Sans";
     }
   }
 }

@@ -55,6 +55,7 @@
 
 .navbar
 {   
+    position: relative;
     z-index: 2;
     display: flex;
     width: 94vw;
@@ -140,5 +141,61 @@
 
         //     background-color: $colorMain;
         // }
+    }
+}
+.feedback-container{
+    position: relative;
+
+    .--feedback{
+        position: relative;
+        z-index: 2;
+    }
+
+
+    .feedback-wrap{
+        position: absolute;
+        top: 0px;
+        
+        display: none;
+        text-align: center;
+
+        padding-top: 50px;
+        padding-bottom: 10px;
+        background-color: #333333;
+        border-radius: 15px;
+        transition: ease-in-out 0.3s;
+        overflow: hidden;
+
+        
+        .feedback-ico{
+            &:hover{
+                path,
+                ellipse,
+                {
+                    stroke: $colorMain;
+                    transition: ease-in-out 0.2s;
+                }
+                path{
+                    fill: $colorMain;
+                }
+                #sharp,
+                #twitter,
+                #telegram,
+                #wechat,{
+                    path{
+                        fill:none;
+                        stroke: $colorMain;
+                    }
+                }
+            }
+        }
+
+
+        svg{
+            width: 35px;
+            height: 100%;
+            margin: 5px;
+
+        }
     }
 }

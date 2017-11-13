@@ -1,0 +1,49 @@
+.footer{
+	font-size: 16px;
+	margin-top: 83px;
+	margin-bottom: 35px;
+
+}
+.wpbtn-footer{
+	border-radius: 10px;
+	background-color: $colorMain;
+	color: #fff;
+	padding: 0 12px;
+	line-height: 4;
+	display: inline-block;
+	margin-bottom: 30px;
+	border: none;
+	outline: none;
+}
+.footer-align-wrapper{
+	text-align: center;
+}
+.footer-sub{
+	padding: 14px 0px 4px 0px;
+	background-color: #EAEAEA;
+}
+.footer-wrapper{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 12px;
+	color: #9B9B9B;
+}
+.footer-contacts{
+	display: flex;
+	align-items: center;
+	.footer-icons{
+		padding: 2px;
+		svg{
+			height: 100%;
+		}
+	}
+	div{
+		padding: 2px;
+	}
+}
+.roadmap-sect{
+	.footer{
+		color: #fff;
+	}
+}

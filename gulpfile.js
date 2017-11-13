@@ -43,9 +43,9 @@ var config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: true,
+    // tunnel: true,
     host: 'localhost',
-    port: 3031,
+    port: 4041,
     logPrefix: "Ruzerio"
 };
 

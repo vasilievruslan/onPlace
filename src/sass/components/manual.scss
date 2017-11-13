@@ -23,7 +23,21 @@
 				color:#000;
 			}
 		}
+		.feedback-container{
+		    position: relative;
+		    .white{
+		       color: #fff;
+		    }
+		    .--feedback{
+		        position: relative;
+		        z-index: 2;
+		    }
+		    .feedback-wrap{
+		    	background-color: rgba(0,0,0,0.4);
+		    }
+		}
 	}
+
 	h2{
 		font-size: 40px;
 		margin-top: 108px;
@@ -34,22 +48,6 @@
 		margin-bottom: 152px;
 		font-size: 16px;
 	}
-	.footer{
-		font-size: 16px;
-		margin-top: 83px;
-		margin-bottom: 35px;
-
-	}
-	.wpbtn-footer{
-		border-radius: 10px;
-		background-color: $colorMain;
-		color: #fff;
-		padding: 0 12px;
-		line-height: 4;
-		display: inline-block;
-		margin-bottom: 30px;
-		border: none;
-		outline: none;
-	}
+	
 
 }

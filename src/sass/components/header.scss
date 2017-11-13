@@ -215,3 +215,20 @@ body{
     text-decoration: none;
   }
 }
+
+body::-webkit-scrollbar-track
+{
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background-color: $colorMain;
+  border-radius: 2px;
+}
