@@ -1660,16 +1660,13 @@ $(function() {
 	});
 
 
-
-
-
-
 	// teampage slider
-	$('.bxslider').bxSlider({
-		controls: false,
-    auto: true,
-    pause: 4000
-	});
+
+	// $('.backgrounds').bxSlider({
+ //    mode: fade,
+	// 	controls: false,
+ //    pagerCustom: '#pager'
+	// });
 		
 	// Roadmap
 
@@ -1760,4 +1757,64 @@ $(function() {
     video.remove();
 
   });
+
+  // main team page 
+
+  var pictures = {  
+    Empty: $('#picture-empty'),
+    Edward: $('#picture-Edward'),
+    Andrei: $('#picture-Andrei'),
+    Dmitriy: $('#picture-Dmitriy'),
+    Ilya: $('#picture-Ilya'),
+    Mike: $('#picture-Mike'),
+    Oleg: $('#picture-Oleg'),
+    Michael: $('#picture-Michael'),
+    Eugene: $('#picture-Eugene')
+  }
+
+  var description = {
+
+    Edward: $('#Edward-description'),
+    Andrei: $('#Andrei-description'),
+    Dmitriy: $('#Dmitriy-description'),
+    Ilya: $('#Ilya-description'),
+    Mike: $('#Mike-description'),
+    Oleg: $('#Oleg-description'),
+    Michael: $('#Michael-description'),
+    Eugene: $('#Eugene-description')
+  }
+
+  var backgrounds = {
+
+    Edward: $('#Edward-background'),
+    Andrei: $('#Andrei-background'),
+    Mike: $('#Mike-background'),
+    Dmitriy: $('#Dmitriy-background'),
+    Ilya: $('#Ilya-background'),
+    Oleg: $('#Oleg-background'),
+    Michael: $('#Michael-background'),
+    Eugene: $('#Eugene-background')
+  }
+
+
+  function changeMember(a, b) {
+    a.fadeIn(400).siblings().fadeOut('400');
+    b.fadeIn(400).siblings().fadeOut('400');
+  }
+
+  pictures.Edward.click(function() {
+    backgrounds.Edward.fadeIn(400).siblings().fadeOut(400);
+    description.Edward.fadeIn(400).siblings().fadeOut(400);
+  });
+
+
+  // pictureEdward.click(changeMember(EdwardBackground, EdwardDescription));
+  // pictureAndrei.click(changeMember(AndreiBackground, AndreiDescription));
+  // pictureDmitriy.click(changeMember(MikeBackground, MikeDescription));
+  // pictureIlya.click(changeMember(DmitriyBackground, DmitriyDescription));
+  // pictureMike.click(changeMember(IlyaBackground, IlyaDescription));
+  // pictureOleg.click(changeMember(OlegBackground, OlegDescription));
+  // pictureMichael.click(changeMember(MichaelBackground, MichaelDescription));
+  // pictureEugene.click(changeMember(EugeneBackground, EugeneDescription));
+
 });

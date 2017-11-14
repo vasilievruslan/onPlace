@@ -21,6 +21,9 @@
 .footer-sub{
 	padding: 14px 0px 4px 0px;
 	background-color: #EAEAEA;
+	.footer-logo{
+		visibility: hidden;
+	}
 }
 .footer-wrapper{
 	display: flex;
