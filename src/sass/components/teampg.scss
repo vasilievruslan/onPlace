@@ -20,9 +20,51 @@
     background: none;
   }
 }
+.team.white{
+  .navbar{
+    svg{
+      #Artboard{
+        fill: #333333 !important;
+      }
+    }
+    .links__item{
+      color: #333333;
+    }
+    .langswitch-carusel{
+      color: #333333;
+    }
+    .langswitch-item{
+      text-align: left;
+      span{
+        color:#333333;
+      }
+    }
+    .feedback-container{
+        position: relative;
+        .white{
+           color: #fff;
+        }
+        .feedback-wrap{
+          background-color: rgba(0,0,0,0.4);
+        }
+    }
+  }
+  .footer{
+    color: #333333;
+  }
+  .team-pagetitle,
+  .team-page_discription{
+    color: #333333;
+  }
+}
+@media screen and (max-width: 1240px)  {
+  .team{
+    padding: 0px 20px;
+  }
+}
 
 .team-wrapper{
-  max-width: 1280px;
+  max-width: 1200px;
   margin: -155px auto;
   position: relative;
   top: -155px;
@@ -48,7 +90,7 @@
   }
   .description-item{
     position: absolute;
-    top: 430px;
+    top: 460px;
     right: 0;
     width: 420px;
     border: 1px solid #FAFAFA;
@@ -56,6 +98,7 @@
     padding: 20px;
     text-align: left;
     display: none;
+    min-height: 287px;
     
     .member-name{
       font-size: 20px;
@@ -71,10 +114,15 @@
   }
 }
 .backgrounds{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
   .backgrounds-item{
     position: absolute;
     width: 100vw;
-    height: 118vh;
+    height: 130vh;
     top: 0;
     left: 0;
     z-index: 0;
@@ -89,6 +137,12 @@
   }
   #Mike-background{
     background: url("../img/team/Mike.jpg") top 0px right 0px / cover no-repeat;
+  }
+  #Dmitriy-background{
+    background: url("../img/team/Dmitriy.jpg") top 0px right 0px / cover no-repeat;
+  }
+  #Ilya-background{
+    background: url("../img/team/Ilya.jpg") top 0px right 0px / cover no-repeat;
   }
   #Oleg-background{
     background: url("../img/team/Oleg.jpg") top 0px right 0px / cover no-repeat;

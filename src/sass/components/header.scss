@@ -194,6 +194,7 @@ body{
   overflow: hidden;
   display: none;
   background-color: #000;
+  z-index: 4;
   video{
     position: absolute;
     top: 0;

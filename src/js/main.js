@@ -1628,11 +1628,18 @@ $(function() {
 	var popUpWhitepapper = $('.whitepapper');
   var feedback = $('#show-feedback');
   var popUpFeedback = $('.feedback-wrap');
+  var closeSpace = $('.space-close');
 
   feedback.click(function(e) {
     e.preventDefault();
     popUpFeedback.fadeToggle('400');
     feedback.toggleClass('white');
+    closeSpace.show();
+  });
+  closeSpace.click(function() {
+    popUpFeedback.fadeOut(400);
+    feedback.removeClass('white');
+    closeSpace.hide();
   });
 
 
@@ -1660,13 +1667,6 @@ $(function() {
 	});
 
 
-	// teampage slider
-
-	// $('.backgrounds').bxSlider({
- //    mode: fade,
-	// 	controls: false,
- //    pagerCustom: '#pager'
-	// });
 		
 	// Roadmap
 
@@ -1773,7 +1773,7 @@ $(function() {
   }
 
   var description = {
-
+    team: $('#team-description'),
     Edward: $('#Edward-description'),
     Andrei: $('#Andrei-description'),
     Dmitriy: $('#Dmitriy-description'),
@@ -1785,7 +1785,7 @@ $(function() {
   }
 
   var backgrounds = {
-
+    total: $('.backgrounds-item'),
     Edward: $('#Edward-background'),
     Andrei: $('#Andrei-background'),
     Mike: $('#Mike-background'),
@@ -1796,25 +1796,74 @@ $(function() {
     Eugene: $('#Eugene-background')
   }
 
+  var hexolinks = $('.member-picture');
+  var bluehexes = $('.blue_polygons');
+  var teamSection = $('.team');
 
-  function changeMember(a, b) {
-    a.fadeIn(400).siblings().fadeOut('400');
-    b.fadeIn(400).siblings().fadeOut('400');
-  }
+  description.team.show();
 
-  pictures.Edward.click(function() {
-    backgrounds.Edward.fadeIn(400).siblings().fadeOut(400);
-    description.Edward.fadeIn(400).siblings().fadeOut(400);
+  hexolinks.click(function () {
+    bluehexes.fadeOut(600);
+    teamSection.addClass('white');
+
   });
 
+  pictures.Empty.click(function(e) {
+    e.preventDefault();
+    backgrounds.total.fadeOut(600);
+    description.team.fadeIn(600).siblings().fadeOut(600)
+    bluehexes.fadeIn(600);
+    teamSection.removeClass('white')
 
-  // pictureEdward.click(changeMember(EdwardBackground, EdwardDescription));
-  // pictureAndrei.click(changeMember(AndreiBackground, AndreiDescription));
-  // pictureDmitriy.click(changeMember(MikeBackground, MikeDescription));
-  // pictureIlya.click(changeMember(DmitriyBackground, DmitriyDescription));
-  // pictureMike.click(changeMember(IlyaBackground, IlyaDescription));
-  // pictureOleg.click(changeMember(OlegBackground, OlegDescription));
-  // pictureMichael.click(changeMember(MichaelBackground, MichaelDescription));
-  // pictureEugene.click(changeMember(EugeneBackground, EugeneDescription));
+  });
+  
+
+  pictures.Andrei.click(function(e) {
+    e.preventDefault();
+    backgrounds.Andrei.fadeIn(600).siblings().fadeOut(600);
+    description.Andrei.fadeIn(600).siblings().fadeOut(600);
+  });
+
+  pictures.Edward.click(function(e) {
+    e.preventDefault();
+    backgrounds.Edward.fadeIn(600).siblings().fadeOut(600);
+    description.Edward.fadeIn(600).siblings().fadeOut(600);
+  });
+  pictures.Dmitriy.click(function(e) {
+    e.preventDefault();
+    backgrounds.Dmitriy.fadeIn(600).siblings().fadeOut(600);
+    description.Dmitriy.fadeIn(600).siblings().fadeOut(600);
+  });
+  pictures.Ilya.click(function(e) {
+    e.preventDefault();
+    backgrounds.Ilya.fadeIn(600).siblings().fadeOut(600);
+    description.Ilya.fadeIn(600).siblings().fadeOut(600);
+  });
+  pictures.Mike.click(function(e) {
+    e.preventDefault();
+    backgrounds.Mike.fadeIn(600).siblings().fadeOut(600);
+    description.Mike.fadeIn(600).siblings().fadeOut(600);
+  });
+  pictures.Oleg.click(function(e) {
+    e.preventDefault();
+    backgrounds.Oleg.fadeIn(600).siblings().fadeOut(600);
+    description.Oleg.fadeIn(600).siblings().fadeOut(600);
+  });
+  pictures.Michael.click(function(e) {
+    e.preventDefault();
+    backgrounds.Michael.fadeIn(600).siblings().fadeOut(600);
+    description.Michael.fadeIn(600).siblings().fadeOut(600);
+  });
+  pictures.Eugene.click(function(e) {
+    e.preventDefault();
+    backgrounds.Eugene.fadeIn(600).siblings().fadeOut(600);
+    description.Eugene.fadeIn(600).siblings().fadeOut(600);
+  });
+
+  $(window).scroll(function() {
+    var st = $(this).scrollTop();
+
+    backgrounds.total.css({ transform: 'translate(0px, -' + st/3 +'px)'});
+  });
 
 });
