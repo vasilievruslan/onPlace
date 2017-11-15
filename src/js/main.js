@@ -1715,24 +1715,24 @@ $(function() {
 
 
 
-  cn.click(function(e) {
-    e.preventDefault();
-    $('body').addClass('blur');
+  // cn.click(function(e) {
+  //   e.preventDefault();
+  //   $('body').addClass('blur');
 
-    setTimeout(function() {
-      window.location.href = 'index-cn.html';
-    }, 1500);
+  //   setTimeout(function() {
+  //     window.location.href = 'index-cn.html';
+  //   }, 1500);
 
-  });
-  eng.click(function(e) {
-    e.preventDefault();
-    $('body').addClass('blur');
+  // });
+  // eng.click(function(e) {
+  //   e.preventDefault();
+  //   $('body').addClass('blur');
 
-    setTimeout(function() {
-      window.location.href = 'index.html';
-    }, 1500);
+  //   setTimeout(function() {
+  //     window.location.href = 'index.html';
+  //   }, 1500);
 
-  });
+  // });
 
 
  // video pop-up
@@ -1803,16 +1803,16 @@ $(function() {
   description.team.show();
 
   hexolinks.click(function () {
-    bluehexes.fadeOut(600);
+    bluehexes.fadeOut(800);
     teamSection.addClass('white');
 
   });
 
   pictures.Empty.click(function(e) {
     e.preventDefault();
-    backgrounds.total.fadeOut(600);
-    description.team.fadeIn(600).siblings().fadeOut(600)
-    bluehexes.fadeIn(600);
+    backgrounds.total.fadeOut(800);
+    description.team.fadeIn(800).siblings().fadeOut(800)
+    bluehexes.fadeIn(800);
     teamSection.removeClass('white')
 
   });
@@ -1820,44 +1820,44 @@ $(function() {
 
   pictures.Andrei.click(function(e) {
     e.preventDefault();
-    backgrounds.Andrei.fadeIn(600).siblings().fadeOut(600);
-    description.Andrei.fadeIn(600).siblings().fadeOut(600);
+    backgrounds.Andrei.fadeIn(800).siblings().fadeOut(800);
+    description.Andrei.fadeIn(800).siblings().fadeOut(800);
   });
 
   pictures.Edward.click(function(e) {
     e.preventDefault();
-    backgrounds.Edward.fadeIn(600).siblings().fadeOut(600);
-    description.Edward.fadeIn(600).siblings().fadeOut(600);
+    backgrounds.Edward.fadeIn(800).siblings().fadeOut(800);
+    description.Edward.fadeIn(800).siblings().fadeOut(800);
   });
   pictures.Dmitriy.click(function(e) {
     e.preventDefault();
-    backgrounds.Dmitriy.fadeIn(600).siblings().fadeOut(600);
-    description.Dmitriy.fadeIn(600).siblings().fadeOut(600);
+    backgrounds.Dmitriy.fadeIn(800).siblings().fadeOut(800);
+    description.Dmitriy.fadeIn(800).siblings().fadeOut(800);
   });
   pictures.Ilya.click(function(e) {
     e.preventDefault();
-    backgrounds.Ilya.fadeIn(600).siblings().fadeOut(600);
-    description.Ilya.fadeIn(600).siblings().fadeOut(600);
+    backgrounds.Ilya.fadeIn(800).siblings().fadeOut(800);
+    description.Ilya.fadeIn(800).siblings().fadeOut(800);
   });
   pictures.Mike.click(function(e) {
     e.preventDefault();
-    backgrounds.Mike.fadeIn(600).siblings().fadeOut(600);
-    description.Mike.fadeIn(600).siblings().fadeOut(600);
+    backgrounds.Mike.fadeIn(800).siblings().fadeOut(800);
+    description.Mike.fadeIn(800).siblings().fadeOut(800);
   });
   pictures.Oleg.click(function(e) {
     e.preventDefault();
-    backgrounds.Oleg.fadeIn(600).siblings().fadeOut(600);
-    description.Oleg.fadeIn(600).siblings().fadeOut(600);
+    backgrounds.Oleg.fadeIn(800).siblings().fadeOut(800);
+    description.Oleg.fadeIn(800).siblings().fadeOut(800);
   });
   pictures.Michael.click(function(e) {
     e.preventDefault();
-    backgrounds.Michael.fadeIn(600).siblings().fadeOut(600);
-    description.Michael.fadeIn(600).siblings().fadeOut(600);
+    backgrounds.Michael.fadeIn(800).siblings().fadeOut(800);
+    description.Michael.fadeIn(800).siblings().fadeOut(800);
   });
   pictures.Eugene.click(function(e) {
     e.preventDefault();
-    backgrounds.Eugene.fadeIn(600).siblings().fadeOut(600);
-    description.Eugene.fadeIn(600).siblings().fadeOut(600);
+    backgrounds.Eugene.fadeIn(800).siblings().fadeOut(800);
+    description.Eugene.fadeIn(800).siblings().fadeOut(800);
   });
 
   $(window).scroll(function() {

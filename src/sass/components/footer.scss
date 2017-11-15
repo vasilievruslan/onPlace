@@ -20,7 +20,6 @@
 }
 .footer-sub{
 	padding: 14px 0px 4px 0px;
-	background-color: #EAEAEA;
 	.footer-logo{
 		visibility: hidden;
 	}
@@ -34,9 +33,8 @@
 }
 .footer-contacts{
 	display: flex;
-	align-items: center;
 	.footer-icons{
-		padding: 2px;
+		padding: 2px 0px 2px 5px;
 		svg{
 			height: 100%;
 		}

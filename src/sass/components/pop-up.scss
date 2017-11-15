@@ -11,13 +11,13 @@
 
 .pop-up {
     width: 720px;
-    margin: 150px auto 0 auto;
+    margin: calc(50vh - 200px) auto 0 auto;
     left: 0;
     right: 0;
     top: 0;
     z-index: 4;
     display: none;
-    background-color: #fff;
+    background-color: #FAFAFA;
     text-align: center;
     margin-left: auto;
     margin-right: auto;

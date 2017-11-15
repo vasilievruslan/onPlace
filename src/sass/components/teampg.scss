@@ -50,7 +50,7 @@
     }
   }
   .footer{
-    color: #333333;
+    color: #9B9B9B;
   }
   .team-pagetitle,
   .team-page_discription{
@@ -98,18 +98,30 @@
     padding: 20px;
     text-align: left;
     display: none;
-    min-height: 287px;
+    min-height: 337px;
     
     .member-name{
       font-size: 20px;
       margin: 0;
       margin-bottom: 15px;
     }
-    .meber-objective{
+    .member-links,  
+    .member-position,
+    .member-objective{
       margin: 0;
       font-size: 13px;
       line-height: 18px;
       font-family: "Open Sans";
+    }
+    .member-links{
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 20px;
+      a{
+        color: #FAFAFA;
+      }
     }
   }
 }
