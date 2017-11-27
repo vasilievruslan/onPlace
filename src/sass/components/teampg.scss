@@ -1,7 +1,57 @@
+@media screen and (max-width: 958px){
+  .team.white{
+    .navbar{
+      .rect{
+        fill: #333333;
+      }
+      .opened .rect:nth-of-type(2)
+      {
+          fill: transparent;
+      }
+
+      .navbar__links{
+        a{
+          color: #FAFAFA;
+        }
+        .langswitch-carusel {
+          color: #fafafa !important;
+        }
+        .langswitch{
+          .langswitch-item{
+            span{
+              color: #FAFAFA;
+            }
+          }
+        }
+      }
+    }
+    .team-pagetitle,
+    .team-page_discription{
+      visibility: hidden !important;
+    }
+  }
+}
+@media screen and (max-width: 944px) {
+  .team{
+    .team-wrapper{
+      .descriptions{
+        position: relative;
+        top: 0;
+        .description-item{
+          position: relative;
+          top: 85px !important;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
 .team{
   background-color: #333333;
   color: #FAFAFA;
   text-align: center;
+  overflow: hidden;
   h2{
     position: relative;
     z-index: 2;
@@ -22,6 +72,9 @@
 }
 .team.white{
   .navbar{
+    .rect{
+      fill: #333333;
+    }
     svg{
       #Artboard{
         fill: #333333 !important;
@@ -58,8 +111,13 @@
   }
 }
 @media screen and (max-width: 1240px)  {
-  .team{
-    padding: 0px 20px;
+  .team-wrapper{
+    margin: 0px 20px !important;
+  }
+}
+@media screen and (max-width: 520px){
+  .team-wrapper svg{
+    width: 270vw;
   }
 }
 
@@ -92,10 +150,11 @@
     position: absolute;
     top: 460px;
     right: 0;
-    width: 420px;
+    max-width: 420px;
     border: 1px solid #FAFAFA;
     background-color: rgba(51,51,51,0.5);
     padding: 20px;
+    padding-bottom: 40px;
     text-align: left;
     display: none;
     min-height: 337px;
@@ -125,6 +184,7 @@
     }
   }
 }
+
 .backgrounds{
   width: 100vw;
   height: 100vh;
@@ -134,7 +194,7 @@
   .backgrounds-item{
     position: absolute;
     width: 100vw;
-    height: 130vh;
+    height: 200vh;
     top: 0;
     left: 0;
     z-index: 0;
@@ -142,10 +202,10 @@
   }
 
   #Edward-background{
-    background: url("../img/team/Edward.jpg") top 0px right 0px / cover no-repeat;
+    background: url("../img/team/Edward.png") top 0px right 0px / cover no-repeat;
   }
   #Andrei-background{
-    background: url("../img/team/Andrei.jpg") top 0px right 0px / cover no-repeat;
+    background: url("../img/team/Andrei.png") top 0px right 0px / cover no-repeat;
   }
   #Mike-background{
     background: url("../img/team/Mike.jpg") top 0px right 0px / cover no-repeat;

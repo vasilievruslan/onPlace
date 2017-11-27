@@ -1,6 +1,6 @@
 .sidebar
 {
-    position: relative;
+    position: absolute;
     top: 0;
     right: 20px;
 
@@ -88,7 +88,7 @@
         align-items: center;
         .links__item
         {
-            font-weight: bold;
+            font-weight: 500;
 
             display: inline-block;
 
@@ -123,24 +123,6 @@
                 }
             }
         }
-        // .--active
-        // {
-        //     opacity: .7;
-        //     display: none;
-        // }
-        // .--active:after
-        // {
-        //     position: relative;
-
-        //     display: block;
-
-        //     width: 100%;
-        //     height: 3px;
-
-        //     content: '';
-
-        //     background-color: $colorMain;
-        // }
     }
 }
 .feedback-container{
@@ -170,20 +152,37 @@
         background-color: #333333;
         border-radius: 15px;
         z-index: 3;
+        text-align: center;
 
+        a.feedback-ico[href="https://www.linkedin.com/company/onplace-inc."]{
+            svg{
+                g{
+                    fill: #FAFAFA;
+                }
+            }
+        } 
         
         .feedback-ico{
             position: relative;
             z-index: 3;
+            path,
+            ellipse,
+            path,
+            rect{
+                transition: ease-in-out 0.2s;
+
+            }
+            
+
             &:hover{
                 text-decoration: none;
                 path,
                 ellipse,
                 {
                     stroke: $colorMain;
-                    transition: ease-in-out 0.2s;
                 }
-                path{
+                path,
+                rect{
                     fill: $colorMain;
                 }
                 #sharp,
@@ -200,7 +199,7 @@
 
 
         svg{
-            width: 35px;
+            width: 40px;
             height: 100%;
             margin: 5px;
 

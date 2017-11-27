@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
 
 *{
-	font-family: "Montserrat";
+	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 }
 
@@ -21,8 +21,3 @@
 	src:url("fonts/roboto-Light.ttf");
 	font-weight: 300;
 }
-
-// html body{
-// 	font-family: 'Roboto', sans-serif;
-// 	font-weight: 300;
-// }

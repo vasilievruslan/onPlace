@@ -1,15 +1,36 @@
+.navbar{
+    .footer-contacts{
+        display: none;
+        width: 200px;
+        padding: 10px 20px;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 0;
+
+    }
+}
 @media screen and (max-width: 960px)
 {   
     .header{
-
+        
+    }
+    .feedback-container .feedback-wrap{
+        width: 260px;
+        right: 0;
+        box-shadow: -1px 2px 12px -3px #000;
     }
     div.navbar
     {
+        .footer-contacts{
+            display: block;
+        }
         .navbar__links
         {
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
+
+            margin-right: -3vw;
 
             flex-direction: column;
 
@@ -25,6 +46,7 @@
             background-color: rgba(0,0,0,.6);
 
             align-items: flex-end;
+            text-align: left !important;
 
 
 
@@ -49,6 +71,7 @@
 
         .sidebar.--on{
             right: 180px;
+            position: fixed;
         }
 
     }
@@ -68,8 +91,4 @@
 .burger-icon{
     width: 100%;
     height: 70px;
-}
-
-@media screen and (max-width: 320px){
-    
 }

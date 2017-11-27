@@ -8,9 +8,14 @@
     display: none;
     background: rgba(0, 0, 0, 0.8);
 }
-
+@media screen and (max-width: 760px) {
+    .pop-up{
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+}
 .pop-up {
-    width: 720px;
+    max-width: 720px;
     margin: calc(50vh - 200px) auto 0 auto;
     left: 0;
     right: 0;

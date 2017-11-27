@@ -1600,70 +1600,81 @@
 })(jQuery);
 
 $(function() {
-	var switcher = $("a.--switcher");
-	var airpalne = $("div.plane-fly");
-	var sidebar = $('.sidebar');
-	var navbar = $('.navbar__links');
-	var burger = $('#burger');
-	var linkItem = $('.links__item');
+
+	var $sidebar = $('.sidebar');
+	var $navbar = $('.navbar__links');
+	var $burger = $('#burger');
+	var $linkItem = $('.links__item');
 
 
-	switcher.click(function() {
-		airpalne.addClass("--active")
+	$sidebar.click(function() {
+		$navbar.toggleClass('--visible');
+		$sidebar.toggleClass('--on');
+		$burger.toggleClass('close').toggleClass('opened');
 	});
-
-	sidebar.click(function() {
-		navbar.toggleClass('--visible');
-		sidebar.toggleClass('--on');
-		burger.toggleClass('close').toggleClass('opened');
-	});
-	
+	$
 
 	// pop-up
 
-	var whitePapper = $('#show-pop-up');
-  var whitePapperBtn = $('.wpbtn-footer');
-	var overlay = $('.cover');
-  var closeBtn = $('.close-button');
-	var popUpWhitepapper = $('.whitepapper');
-  var feedback = $('#show-feedback');
-  var popUpFeedback = $('.feedback-wrap');
-  var closeSpace = $('.space-close');
+	var $whitePapper = $('#show-pop-up');
+  var $whitePapperBtn = $('.wpbtn-footer');
+	var $overlay = $('.cover');
+  var $closeBtn = $('.close-button');
+	var $popUpWhitepapper = $('.whitepapper');
+  var $feedback = $('#show-feedback');
+  var $popUpFeedback = $('.feedback-wrap');
+  var $closeSpace = $('.space-close');
+  var $qrWeChat = $('#qr-wechat');
+  var $linkWeChat = $('#link-wechat');
+  var $feedbackLinks = $('.feedback-ico');
 
-  feedback.click(function(e) {
+  $qrWeChat.hide().click(function() {
+    $qrWeChat.fadeToggle(600);
+    $feedbackLinks.delay(600).fadeToggle(400);
+  });
+  $linkWeChat.click(function(e) {
     e.preventDefault();
-    popUpFeedback.fadeToggle('400');
-    feedback.toggleClass('white');
-    closeSpace.show();
-  });
-  closeSpace.click(function() {
-    popUpFeedback.fadeOut(400);
-    feedback.removeClass('white');
-    closeSpace.hide();
+    $qrWeChat.delay(400).fadeToggle(600);
+    $feedbackLinks.fadeToggle(400);
   });
 
 
+  $feedback.click(function(e) {
+    e.preventDefault();
+    $popUpFeedback.fadeToggle('400');
+    $feedback.toggleClass('white');
+    $closeSpace.toggle(400);
+  });
 
-  whitePapper.click(function(event) {
+
+  $closeSpace.click(function() {
+    $popUpFeedback.fadeOut(400);
+    $feedback.removeClass('white');
+    $closeSpace.hide();
+  });
+
+
+
+  $whitePapper.click(function(event) {
     event.preventDefault();
-    overlay.fadeIn(400);
-    popUpWhitepapper.fadeIn(400);
+    $overlay.fadeIn(400);
+    $popUpWhitepapper.fadeIn(400);
   });
 
-  whitePapperBtn.click(function(event) {
+  $whitePapperBtn.click(function(event) {
     event.preventDefault();
-    overlay.fadeIn(400);
-    popUpWhitepapper.fadeIn(400);
+    $overlay.fadeIn(400);
+    $popUpWhitepapper.fadeIn(400);
   });
 
 
-	closeBtn.click(function() {
-		overlay.fadeOut(400);
-		popUpWhitepapper.fadeOut(400);
+	$closeBtn.click(function() {
+		$overlay.fadeOut(400);
+		$popUpWhitepapper.fadeOut(400);
 	});
-	overlay.click(function() {
-		overlay.fadeOut(400);
-		popUpWhitepapper.fadeOut(400);
+	$overlay.click(function() {
+		$overlay.fadeOut(400);
+		$popUpWhitepapper.fadeOut(400);
 	});
 
 
@@ -1672,41 +1683,42 @@ $(function() {
 
 
 
-	var hexagone = $('.hexogon');
-	var lineConnect = $('.line');
-	var textPoints = $('g.text');
+	var $hexagone = $('.hexogon');
+	var $lineConnect = $('.line');
+	var $textPoints = $('g.text');
 
-	var roadmap = $('.roadmap');
+	var $roadmap = $('.roadmap');
 
-	lineConnect.hide();
-	textPoints.hide();
-	hexagone.click(function() {
-		roadmap.addClass('step1');
+	$lineConnect.hide();
+	$textPoints.hide();
+	$hexagone.click(function() {
+		$roadmap.addClass('step1');
 		setTimeout(function () {
-			roadmap.addClass('step2');
+			$roadmap.addClass('step2');
 		}, 1200);
 		setTimeout(function () {
-			lineConnect.fadeIn('1000');
-			textPoints.delay(1000).fadeIn('400');
+			$lineConnect.fadeIn('1000');
+			$textPoints.delay(1000).fadeIn('400');
 		},2000)
 	});
 
  // Language switch
 
-  var langItem = $('a.lang')
-  var eng = $('#lang-us');
-  var cn = $('#lang-cn');
-  var ind = $('#lang-in');
+  var $langItem = $('a.lang')
+  var $eng = $('#lang-us');
+  var $cn = $('#lang-cn');
+  var $ind = $('#lang-in');
 
-  var langBtn = $('.langswitch-btn');
-  var langSwitch = $('.langswitch');
-  var langSwitchCarusel = $('.langswitch-carusel');
+  var $langBtn = $('.langswitch-wrap');
+  var $langSwitch = $('.langswitch');
+  var $langSwitchCarusel = $('.langswitch-carusel');
 
-  langBtn.click(function() {
-    langSwitch.toggle(400);
+  $langBtn.click(function() {
+    $langSwitch.toggle(400);
+    $('.links__item').toggleClass('hided');
   });
 
-  langSwitchCarusel.bxSlider({
+  $langSwitchCarusel.bxSlider({
     auto: true,
     controls: false,
     pause: 2000,
@@ -1738,23 +1750,29 @@ $(function() {
  // video pop-up
 
 
-  var popUpVideoContainer = $(".pop-up-video");
-  var popUpVideoBtn = $('.promovideo-button');
+  var $popUpVideoContainer = $(".pop-up-video");
+  var $popUpVideoBtn = $('#play-video-eng-btn');
+  var $popUpVideoCnBtn = $('#play-video-cn-btn');
 
 
-  popUpVideoBtn.click(function() {
-    popUpVideoContainer.append('<iframe id="video" src="https://www.youtube.com/embed/p1YiDKlSe8k?rel=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
-    popUpVideoContainer.fadeIn(700);
+  $popUpVideoBtn.click(function() {
+      $popUpVideoContainer.append('<iframe id="video" src="https://www.youtube.com/embed/p1YiDKlSe8k?rel=0&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+      $popUpVideoContainer.fadeIn(700);
   });
 
+  $popUpVideoCnBtn.click(function() {
+      $popUpVideoContainer.append('<video id="video" loop autoplay><source src="http://onplace.io/img/video/onplace-china-subtitle.mp4" type="video/mp4"/></video>');
+      $popUpVideoContainer.fadeIn(700);
+  })
+
   $('.close-button-video').click(function(e) {
-    var video = $('#video');
-    var videoScreen = $('#video-pop-up');
+    var $video = $('#video');
+    var $videoScreen = $('#video-pop-up');
     
     e.preventDefault();
-    popUpVideoContainer.hide(700);
-    videoScreen.remove();
-    video.remove();
+    $popUpVideoContainer.hide(700);
+    $videoScreen.remove();
+    $video.remove();
 
   });
 
@@ -1860,10 +1878,44 @@ $(function() {
     description.Eugene.fadeIn(800).siblings().fadeOut(800);
   });
 
+  var disabledLink = $('.disabled');
+
+  disabledLink.click(function(event) {
+    event.preventDefault();
+
+  });
+
+  // scroll drawing
+
   $(window).scroll(function() {
     var st = $(this).scrollTop();
 
     backgrounds.total.css({ transform: 'translate(0px, -' + st/3 +'px)'});
   });
+  
+  // // Get a reference to the <path>
+  // var path = document.querySelector('#line');
 
+  // // Get length of path... ~1668px
+  // var pathLength = path.getTotalLength();
+
+  // // Make very long dashes (the length of the path itself)
+  // path.style.strokeDasharray = pathLength + ' ' + pathLength;
+
+  // // Offset the dashes so the it appears hidden entirely
+  // path.style.strokeDashoffset = pathLength;
+
+  // // When the page scrolls...
+  // window.addEventListener("scroll", function(e) {
+   
+  //   // What % down is it? 
+  //   var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+      
+  //   // Length to offset the dashes
+  //   var drawLength = pathLength * scrollPercentage;
+    
+  //   // Draw in reverse
+  //   path.style.strokeDashoffset = pathLength - drawLength;
+    
+    
 });
