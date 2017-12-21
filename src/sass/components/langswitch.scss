@@ -74,11 +74,11 @@ body.blur{
 			.langswitch-wrap{
 				bottom: 35px;
 			}
-			.navbar__links{
-				.links__item.hided{
-					color: #333;
-				}
-			}
+		}
+	}
+	.navbar__links{
+		.links__item.hided{
+			color: #333 !important;
 		}
 	}
 	.navbar{

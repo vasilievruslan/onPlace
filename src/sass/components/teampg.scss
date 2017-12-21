@@ -13,8 +13,8 @@
         a{
           color: #FAFAFA;
         }
-        .langswitch-carusel {
-          color: #fafafa !important;
+        a.langswitch-carusel {
+          color: #fafafa;
         }
         .langswitch{
           .langswitch-item{
@@ -225,26 +225,33 @@
   #Eugene-background{
     background: url("../img/team/Eugene.jpg") top 0px right 0px / cover no-repeat;
   }
+  #Ruslan-background{
+    background: url("../img/team/Ruslan.jpg") top 0px right 0px / cover no-repeat;
+  }
+  #Vladimir-background{
+    background: url("../img/team/Vladimir.jpg") top 0px right 0px / cover no-repeat;
+  }
+
 }
 
-.bx-wrapper {
-  position: absolute;
-  top: 0;
-  // margin-bottom: 60px;
-  padding: 0;
-  *zoom: 1;
-}
-.bx-wrapper img {
-  max-width: 100%;
-  display: block;
-}
-.bxslider {
-  margin: 0;
-  padding: 0;
-}
-ul.bxslider {
-  list-style: none;
-}
-.bx-viewport {
-  -webkit-transform: translateZ(0);
-}
+// .bx-wrapper {
+//   position: absolute;
+//   top: 0;
+//   // margin-bottom: 60px;
+//   padding: 0;
+//   *zoom: 1;
+// }
+// .bx-wrapper img {
+//   max-width: 100%;
+//   display: block;
+// }
+// .bxslider {
+//   margin: 0;
+//   padding: 0;
+// }
+// ul.bxslider {
+//   list-style: none;
+// }
+// .bx-viewport {
+//   -webkit-transform: translateZ(0);
+// }

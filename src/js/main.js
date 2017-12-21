@@ -1603,16 +1603,24 @@ $(function() {
 
 	var $sidebar = $('.sidebar');
 	var $navbar = $('.navbar__links');
+  var $navbarContainer = $('.navbar')
 	var $burger = $('#burger');
 	var $linkItem = $('.links__item');
+  var $sidebarlayout = $('.sidebarlayout');
 
 
 	$sidebar.click(function() {
 		$navbar.toggleClass('--visible');
 		$sidebar.toggleClass('--on');
 		$burger.toggleClass('close').toggleClass('opened');
-	});
-	$
+  });
+  $navbarContainer.siblings().click(function() {
+    $navbar.removeClass('--visible');
+    $sidebar.removeClass('--on');
+    $burger.addClass('close').removeClass('opened');
+  });
+
+
 
 	// pop-up
 
@@ -1727,26 +1735,6 @@ $(function() {
 
 
 
-  // cn.click(function(e) {
-  //   e.preventDefault();
-  //   $('body').addClass('blur');
-
-  //   setTimeout(function() {
-  //     window.location.href = 'index-cn.html';
-  //   }, 1500);
-
-  // });
-  // eng.click(function(e) {
-  //   e.preventDefault();
-  //   $('body').addClass('blur');
-
-  //   setTimeout(function() {
-  //     window.location.href = 'index.html';
-  //   }, 1500);
-
-  // });
-
-
  // video pop-up
 
 
@@ -1761,7 +1749,7 @@ $(function() {
   });
 
   $popUpVideoCnBtn.click(function() {
-      $popUpVideoContainer.append('<video id="video" loop autoplay><source src="http://onplace.io/img/video/onplace-china-subtitle.mp4" type="video/mp4"/></video>');
+      $popUpVideoContainer.append('<video id="video" controls autoplay><source src="http://onplace.io/img/video/onplace-china-subtitle.mp4" type="video/mp4"/></video>');
       $popUpVideoContainer.fadeIn(700);
   })
 
@@ -1776,6 +1764,13 @@ $(function() {
 
   });
 
+  $('.partners-carousel').bxSlider({
+    auto: true,
+    controls: false,
+    pause: 3000,
+    pager: false
+  })
+
   // main team page 
 
   var pictures = {  
@@ -1787,7 +1782,9 @@ $(function() {
     Mike: $('#picture-Mike'),
     Oleg: $('#picture-Oleg'),
     Michael: $('#picture-Michael'),
-    Eugene: $('#picture-Eugene')
+    Eugene: $('#picture-Eugene'),
+    Ruslan: $('#picture-Ruslan'),
+    Vladimir: $('#picture-Vladimir')
   }
 
   var description = {
@@ -1799,7 +1796,9 @@ $(function() {
     Mike: $('#Mike-description'),
     Oleg: $('#Oleg-description'),
     Michael: $('#Michael-description'),
-    Eugene: $('#Eugene-description')
+    Eugene: $('#Eugene-description'),
+    Ruslan: $('#Ruslan-description'),
+    Vladimir: $('#Vladimir-description')
   }
 
   var backgrounds = {
@@ -1811,7 +1810,9 @@ $(function() {
     Ilya: $('#Ilya-background'),
     Oleg: $('#Oleg-background'),
     Michael: $('#Michael-background'),
-    Eugene: $('#Eugene-background')
+    Eugene: $('#Eugene-background'),
+    Ruslan: $('#Ruslan-background'),
+    Vladimir: $('#Vladimir-background')
   }
 
   var hexolinks = $('.member-picture');
@@ -1832,16 +1833,18 @@ $(function() {
     description.team.fadeIn(800).siblings().fadeOut(800)
     bluehexes.fadeIn(800);
     teamSection.removeClass('white')
-
   });
-  
+
+    function changeBg(a) {
+      backgrounds.a.fadeIn(800).siblings().fadeOut(800);
+      description.a.fadeIn(800).siblings().fadeOut(800);
+    }
 
   pictures.Andrei.click(function(e) {
     e.preventDefault();
     backgrounds.Andrei.fadeIn(800).siblings().fadeOut(800);
     description.Andrei.fadeIn(800).siblings().fadeOut(800);
   });
-
   pictures.Edward.click(function(e) {
     e.preventDefault();
     backgrounds.Edward.fadeIn(800).siblings().fadeOut(800);
@@ -1877,45 +1880,22 @@ $(function() {
     backgrounds.Eugene.fadeIn(800).siblings().fadeOut(800);
     description.Eugene.fadeIn(800).siblings().fadeOut(800);
   });
-
-  var disabledLink = $('.disabled');
-
-  disabledLink.click(function(event) {
-    event.preventDefault();
-
+  pictures.Ruslan.click(function(e) {
+    e.preventDefault();
+    backgrounds.Ruslan.fadeIn(800).siblings().fadeOut(800);
+    description.Ruslan.fadeIn(800).siblings().fadeOut(800);
   });
-
-  // scroll drawing
+  pictures.Vladimir.click(function(e) {
+    e.preventDefault();
+    backgrounds.Vladimir.fadeIn(800).siblings().fadeOut(800);
+    description.Vladimir.fadeIn(800).siblings().fadeOut(800);
+  });
+  
 
   $(window).scroll(function() {
     var st = $(this).scrollTop();
 
     backgrounds.total.css({ transform: 'translate(0px, -' + st/3 +'px)'});
   });
-  
-  // // Get a reference to the <path>
-  // var path = document.querySelector('#line');
-
-  // // Get length of path... ~1668px
-  // var pathLength = path.getTotalLength();
-
-  // // Make very long dashes (the length of the path itself)
-  // path.style.strokeDasharray = pathLength + ' ' + pathLength;
-
-  // // Offset the dashes so the it appears hidden entirely
-  // path.style.strokeDashoffset = pathLength;
-
-  // // When the page scrolls...
-  // window.addEventListener("scroll", function(e) {
-   
-  //   // What % down is it? 
-  //   var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
       
-  //   // Length to offset the dashes
-  //   var drawLength = pathLength * scrollPercentage;
-    
-  //   // Draw in reverse
-  //   path.style.strokeDashoffset = pathLength - drawLength;
-    
-    
 });

@@ -97,7 +97,7 @@
     }
     #hex9
     {
-        transform: translate(1514px, 2518px);
+        transform: translate(1514px, 2685px) rotate(-30deg);
     }
     #hex2
     {
@@ -115,9 +115,12 @@
     {
         transform: translate(1948px, 2505px) rotate(-30deg);
     }
+    #hex11{
+      transform: translate(1948px, 2870px);
+    }
     #hex10
     {
-        transform: translate(1954px, 2870px) rotate(-30deg);
+        transform: translate(1515px,3050px) rotate(-30deg);
     }
     .hexogon{
         transition: ease-in-out 0.8s;
@@ -129,30 +132,33 @@
     transform: translate(1804px, 367px);
   }
   #hex3{
-    transform: translate(1514px, 1440px) rotate(-30deg);
+    transform: translate(1514px, 1285px) rotate(-30deg);
   }
   #hex5{
-  transform: translate(1514px, 1955px) rotate(-30deg);
+  transform: translate(1514px, 1800px) rotate(-30deg);
   }
   #hex7{
-    transform: translate(1514px, 2460px) rotate(-30deg);
+    transform: translate(1514px, 2305px) rotate(-30deg);
   }
   #hex9{
-    transform: translate(1514px, 2808px);
+    transform: translate(1514px, 2830px) rotate(-30deg);
   }
 
 
   #hex2{
-    transform: translate(1948px, 1175px) rotate(-30deg);
+    transform: translate(1948px, 1020px) rotate(-30deg);
   }
   #hex4{
-    transform: translate(1948px, 1695px) rotate(-30deg);
+    transform: translate(1948px, 1540px) rotate(-30deg);
   }
   #hex6{
-    transform: translate(1948px, 2195px) rotate(-30deg);
+    transform: translate(1948px, 2040px) rotate(-30deg);
   }
   #hex8{
-    transform: translate(1948px, 2720px) rotate(-30deg);
+    transform: translate(1948px, 2565px) rotate(-30deg);
+  }
+  #hex11{
+    transform: translate(1948px, 3090px);
   }
   #hex10{
     transform: translate(1804px, 3565px);
@@ -161,7 +167,7 @@
 
 
 #hex1{
-  transform: translate(1574px, 127px) rotate(-30deg);
+  transform: translate(1574px, 125px) rotate(-30deg);
 }
 #hex3{
   transform: translate(1574px, 490px) rotate(-30deg);
@@ -173,7 +179,7 @@
   transform: translate(1574px, 1220px) rotate(-30deg);
 }
 #hex9{
-  transform: translate(1574px, 1418px);
+  transform: translate(1574px, 1585px) rotate(-30deg);
 }
 
 
@@ -181,7 +187,7 @@
   transform: translate(1888px, 305px) rotate(-30deg);
 }
 #hex4{
-  transform: translate(1888px, 675px) rotate(-30deg);
+  transform: translate(1888px, 670px) rotate(-30deg);
 }
 #hex6{
   transform: translate(1888px, 1035px) rotate(-30deg);
@@ -189,8 +195,12 @@
 #hex8{
   transform: translate(1888px, 1405px) rotate(-30deg);
 }
+#hex11{
+  transform: translate(1888px, 1770px);
+}
+
 #hex10{
-  transform: translate(1884px, 1770px) rotate(-30deg);
+  transform: translate(1574px, 1952px) rotate(-30deg);
 }
 
 
