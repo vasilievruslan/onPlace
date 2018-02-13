@@ -52,4 +52,35 @@
     padding: 5px;
 }
 
-
+.attantion-alert{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    .alert-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;  
+        background-color: #fff;
+        text-align: center;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        max-height: 90vh;
+        overflow-x: hidden;
+        img{
+            width: 100%;
+        }
+    }
+}
+.closebtn{
+    position: absolute;
+    color: #fff;
+    top: -20px;
+    right: -20px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 0;
+}

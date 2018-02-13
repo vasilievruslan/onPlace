@@ -15,6 +15,7 @@
 
 
     transition: ease .2s;
+    z-index: 3;
 }
 
 /* CLOSE */
@@ -168,7 +169,8 @@
             path,
             ellipse,
             path,
-            rect{
+            rect,
+            polyline{
                 transition: ease-in-out 0.2s;
 
             }
@@ -188,11 +190,31 @@
                 #sharp,
                 #twitter,
                 #telegram,
-                #wechat,{
+                #wechat{
                     path{
-                        fill:none;
+                        fill: transparent;
                         stroke: $colorMain;
                     }
+                }
+                #reddit{
+                    polyline,
+                    path,
+                    ellipse
+                    circle{
+                        stroke: $colorMain !important;
+                    }
+                    circle{
+                        stroke: #1f9df2;
+                        fill: $colorMain !important;
+                    }
+                }
+                .fill{
+                    fill: $colorMain;
+                    stroke: $colorMain;
+                }
+                .white{
+                    fill: #fff !important;
+                    stroke: #fff ;
                 }
             }
         }

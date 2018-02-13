@@ -1,0 +1,15 @@
+
+<svg width="178px" height="149px" viewBox="0 0 178 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-322.000000, -83.000000)">
+        <g id="reddit" transform="translate(326.000000, 87.000000)">
+            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="7" points="131.107532 11.0411774 97.957119 3.05895642 85.0031315 42.5369219"></polyline>
+            <path d="M58.2889136,114.385288 C58.2889136,114.385288 68.5733976,123.149901 86.460663,123.149901 C95.872891,123.149901 104.394389,120.228363 112.025158,114.385288" id="Path-3" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"></path>
+            <path d="M30.710912,58.7602781 C30.2982696,58.7602781 16.6697638,45.1485715 3.64330405,59.7733926 C-2.66089923,70.5975777 -0.783728179,78.916803 9.2748172,84.7310685" id="Path-4" stroke="#FFFFFF" stroke-width="7"></path>
+            <ellipse id="Oval" stroke="#FFFFFF" stroke-width="7" cx="85.5" cy="92" rx="75.5" ry="49"></ellipse>
+            <circle id="Oval-2" stroke="#FFFFFF" stroke-width="7" cx="145" cy="13" r="13"></circle>
+            <circle id="Oval-3" fill="#FFFFFF" cx="58" cy="83" r="12"></circle>
+            <circle id="Oval-3-Copy" fill="#FFFFFF" cx="111" cy="83" r="12"></circle>
+            <path d="M169.710912,58.7602781 C169.29827,58.7602781 155.669764,45.1485715 142.643304,59.7733926 C136.339101,70.5975777 138.216272,78.916803 148.274817,84.7310685" id="Path-4-Copy" stroke="#FFFFFF" stroke-width="7" transform="translate(154.355456, 68.865534) scale(-1, 1) translate(-154.355456, -68.865534) "></path>
+        </g>
+    </g>
+</svg>

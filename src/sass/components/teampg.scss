@@ -231,27 +231,89 @@
   #Vladimir-background{
     background: url("../img/team/Vladimir.jpg") top 0px right 0px / cover no-repeat;
   }
+  #Valentina-background{
+    background: url("../img/team/Valentina.jpg") top 0px right 0px / cover no-repeat;
+  }
 
 }
 
-// .bx-wrapper {
-//   position: absolute;
-//   top: 0;
-//   // margin-bottom: 60px;
-//   padding: 0;
-//   *zoom: 1;
-// }
-// .bx-wrapper img {
-//   max-width: 100%;
-//   display: block;
-// }
-// .bxslider {
-//   margin: 0;
-//   padding: 0;
-// }
-// ul.bxslider {
-//   list-style: none;
-// }
-// .bx-viewport {
-//   -webkit-transform: translateZ(0);
-// }
+.advisors-maintitle{
+  margin-bottom: 50px !important;
+}
+.advisors-wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+}
+.advisor-item{
+  max-width: 208px;
+  position: relative;
+  .card-back-wrap {
+    position: relative;
+    top: -90px;
+    margin: 0px 10px;
+  }
+  .card-front{
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .card-back{
+    background-color: #d8d8d8;
+    padding: 90px 10px 10px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p{
+      color: #333333;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+  }
+  .card-back-bottom{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 95px 0 95px;
+    border-color: #d8d8d8 transparent transparent transparent;
+  }
+}
+
+.advisor-ln{
+  display: block;
+  z-index: 2; 
+  position: relative;
+  line-height: 0;
+  margin-top: 20px;
+  transition:   ease-in-out 0.3s;
+    &:hover{
+      transform: scale(1.2);
+    }
+}
+
+@keyframes fading{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.3;
+  } 
+  100%{
+    opacity: 1;
+  }
+}
+
+#arrows-tobottom{
+  animation-duration: 1.5s;
+  animation-name: fading;
+  animation-iteration-count: infinite;
+}
+
+
