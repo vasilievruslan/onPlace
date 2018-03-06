@@ -150,30 +150,6 @@ $(function() {
 	});
 
 
-		
-	// Roadmap
-
-
-
-	var $hexagone = $('.hexogon');
-	var $lineConnect = $('.line');
-	var $textPoints = $('g.text');
-
-	var $roadmap = $('.roadmap');
-
-	$lineConnect.hide();
-	$textPoints.hide();
-	$hexagone.click(function() {
-		$roadmap.addClass('step1');
-		setTimeout(function () {
-			$roadmap.addClass('step2');
-		}, 1200);
-		setTimeout(function () {
-			$lineConnect.fadeIn('1000');
-			$textPoints.delay(1000).fadeIn('400');
-		},2000)
-	});
-
  // Language switch
 
   var $langItem = $('a.lang')
